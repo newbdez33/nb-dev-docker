@@ -9,7 +9,6 @@ docker-compose build
 ### Start up
 ```{r, engine='bash', count_lines}
 docker-compose up
-docker-compose start //background run
 ```
 
 
