@@ -29,3 +29,6 @@ sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php/7.0/fpm/php.ini
 # create run directories
 mkdir -p /var/run/php
 chown -R www-data:www-data /var/run/php
+
+
+ln -s /etc/nginx/sites-available/custom.conf /etc/nginx/sites-enabled/

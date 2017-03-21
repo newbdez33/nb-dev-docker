@@ -73,7 +73,7 @@ ENV TERM=xterm
 ADD build/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD build/php.ini /etc/php/7.0/fpm/conf.d/40-custom.ini
 ADD build/xextra.conf /etc/php/7.0/fpm/pool.d/xextra.conf
-ADD build/custom.vhost /etc/nginx/conf.d/default.conf
+ADD build/custom.vhost /etc/nginx/sites-available/custom.conf
 ADD build/crontab.root /var/spool/cron/crontabs/root
 
 # Expose volumes
