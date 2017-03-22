@@ -3,7 +3,7 @@ server {
         root /var/www/iosdeveloper.mobi;
         index index.html index.htm;
 
-        server_name iosdeveloper.mobi, www.iosdeveloper.mobi;
+        server_name www.iosdeveloper.mobi iosdeveloper.mobi;
 }
 
 server {
@@ -11,7 +11,7 @@ server {
         root /var/www/salmonapps.com;
         index index.html index.htm;
 
-        server_name salmonapps.com, www.salmonapps.com;
+        server_name www.salmonapps.com salmonapps.com;
 }
 
 server {
