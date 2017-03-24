@@ -8,6 +8,14 @@ server {
 
 server {
         listen 80;
+        root /var/www/dalianyoujia.com;
+        index index.html index.htm;
+
+        server_name www.dalianyoujia.com dalianyoujia.com;
+}
+
+server {
+        listen 80;
         root /var/www/salmonapps.com;
         index index.html index.htm;
 
@@ -17,7 +25,7 @@ server {
 server {
 
     listen 80;
-	
+
     root /var/www/pr/public/;
     index index.php index.html index.htm;
 
