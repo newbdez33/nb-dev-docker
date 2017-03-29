@@ -4,7 +4,8 @@ front:
   ports:
     - "80:80"
     - "9000:9000"
-  # links:
+  links:
+    - "selenium"
   #   - "gearman"
   volumes:
     - /var/www:/var/www
@@ -19,3 +20,9 @@ front:
 #   volumes:
 #     - /var/www:/var/www
 
+selenium:
+  restart: always
+  build: images/selenium
+  ports:
+    - "4444:4444"
+    - "5900:5900"
