@@ -1,1 +1,1 @@
-FROM selenium/standalone-chrome-debug:3.2.0-actinium
+FROM selenium/standalone-firefox-debug
