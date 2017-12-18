@@ -3,12 +3,12 @@ front:
   build: images/nginx
   ports:
     - "80:80"
-    - "9000:9000"
-  links:
-    - "selenium"
+  #   - "9000:9000"
+  # links:
+  #   - "selenium"
   #   - "gearman"
   volumes:
-    - /var/www:/var/www
+    - /Users/jacky/Desktop/catalina/daily:/var/www
   # extra_hosts:
   #   - "phpstack_mysql_1:192.168.0.164"
 
@@ -20,11 +20,11 @@ front:
 #   volumes:
 #     - /var/www:/var/www
 
-selenium:
-  restart: always
-  build: images/selenium
-  ports:
-    - "4444:4444"
-    - "5900:5900"
-  volumes:
-    - /dev/shm:/dev/shm
+# selenium:
+#   restart: always
+#   build: images/selenium
+#   ports:
+#     - "4444:4444"
+#     - "5900:5900"
+#   volumes:
+#     - /dev/shm:/dev/shm

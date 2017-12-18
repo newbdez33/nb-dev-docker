@@ -1,32 +1,8 @@
 server {
-        listen 80;
-        root /var/www/iosdeveloper.mobi;
-        index index.html index.htm;
-
-        server_name www.iosdeveloper.mobi iosdeveloper.mobi;
-}
-
-server {
-        listen 80;
-        root /var/www/dalianyoujia.com;
-        index index.html index.htm;
-
-        server_name www.dalianyoujia.com dalianyoujia.com;
-}
-
-server {
-        listen 80;
-        root /var/www/salmonapps.com;
-        index index.html index.htm;
-
-        server_name www.salmonapps.com salmonapps.com;
-}
-
-server {
 
     listen 80;
 
-    root /var/www/pr/public/;
+    root /var/www/dto-959/icenomi1/;
     index index.php index.html index.htm;
 
     charset utf-8;
@@ -59,5 +35,5 @@ server {
         deny all;
     }
 
-    server_name api.pricebot.salmonapps.com;
+    server_name test;
 }

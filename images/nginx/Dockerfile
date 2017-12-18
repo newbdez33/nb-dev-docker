@@ -7,8 +7,8 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
 # Set the timezone.
-RUN echo "Asia/Hong_Kong" > /etc/timezone
-RUN dpkg-reconfigure -f noninteractive tzdata
+RUN echo "Asia/Tokyo" > /etc/timezone
+#RUN dpkg-reconfigure -f noninteractive tzdata
 # change resolv.conf
 #RUN echo 'nameserver 8.8.8.8' > /etc/resolv.conf
 
