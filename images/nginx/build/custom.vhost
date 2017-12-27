@@ -2,7 +2,7 @@ server {
 
     listen 80;
 
-    root /var/www/dto-959/icenomi1/;
+    root /var/www/dto-996/uchinogohan/;
     index index.php index.html index.htm;
 
     charset utf-8;
@@ -35,5 +35,5 @@ server {
         deny all;
     }
 
-    server_name test;
+    server_name _;
 }
